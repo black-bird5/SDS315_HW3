@@ -37,7 +37,7 @@ confint(boot_gas_a, level = 0.95)
 
 Claim: Gas stations charge more if they lack direct competition in sight.
 
-Evidence: The difference in mean prices between gas stations with direct competitors in sight and those who don't is between -0.056 dollars and 0.008 dollars with 95% confidence. 
+Evidence: The difference in mean prices between gas stations with direct competitors in sight and those who don't is between -0.056 dollars and 0.008 dollars, with 95% confidence. Since 0 is contained within our confidence interval, this theory is unsupported by the data. 
 
 Conclusion: At a 5% significance level, there is no statistically significant difference between the price of gas at gas stations that have other gas stations in sight compared to those that do not. 
 
@@ -54,7 +54,7 @@ confint(boot_gas_b, level = 0.95)
 
 Claim: The richer the area, the higher the gas prices.
 
-Evidence: The correlation between gas station prices and the median household income of an area is between 0.193 and 0.568, with 95% confidence. 
+Evidence: The correlation between gas station prices and the median household income of an area is between 0.193 and 0.568, with 95% confidence. Since 0 is not contained within our confidence interval, this theory is supported by the data, and we can say, with 95% confidence, there is a medium level of correlation between gas prices and the median household income of the ZIP code where the gas station is located. 
 
 Conclusion: At a 5% significance level, there is a statistically significant correlation between the price of gas and the median household income of the ZIP code where the gas station is located. 
 
@@ -67,7 +67,7 @@ confint(boot_gas_c, level = 0.95)
 
 Claim: Gas stations at stoplights charge more.
 
-Evidence: The difference in mean prices between gas stations at stoplights and those not at stoplights is between -0.038 dollars and 0.03 dollars with 95% confidence.
+Evidence: The difference in mean prices between gas stations at stoplights and those not at stoplights is between -0.038 dollars and 0.03 dollars with 95% confidence. Since 0 is contained within our confidence interval, this theory is unsupported by the data. 
 
 Conclusion: At a 5% significance level, there is no statistically significant difference between the price of gas at gas stations that have a stoplight in front of them compared to those that do not. 
 
@@ -80,7 +80,7 @@ confint(boot_gas_d, level = 0.95)
 
 Claim: Gas stations with direct highway access charge more.
 
-Evidence: The difference in mean prices between gas stations with direct highway access and those without is between 0.008 dollars and 0.081 dollars with 95% confidence.
+Evidence: The difference in mean prices between gas stations with direct highway access and those without is between 0.008 dollars and 0.081 dollars with 95% confidence. Since 0 is not contained within our confidence interval, this theory is supported by the data, and we can say, with 95% confidence, gas stations with direct highway access change slightly more than gas stations without. 
 
 Conclusion: At a 5% significance level, there is a statistically significant difference between the price of gas at gas stations that are accessible from either a highway or a highway access road compared to those that do not. 
 
@@ -95,7 +95,7 @@ confint(boot_gas_e, level = 0.95)
 
 Claim: Shell charges more than all other non-Shell brands.
 
-Evidence: The difference in mean prices between Shell gas stations and non-Shell gas stations is between -0.01 dollars and 0.065 dollars with 95% confidence.
+Evidence: The difference in mean prices between Shell gas stations and non-Shell gas stations is between -0.01 dollars and 0.065 dollars with 95% confidence. Since 0 is contained within our confidence interval, this theory is unsupported by the data. 
 
 Conclusion: At a 5% significance level, there is no statistically significant difference between the price of gas at Shell gas stations compared to other gas stations brands. 
 
@@ -149,7 +149,7 @@ Question:  Is there evidence that either "Living with Ed" or "My Name is Earl" c
 
 Approach: First, I created a new dataset that only contains the shows, "Living with Ed" and "My Name is Earl." Then, I created 10000 bootstrap samples from the new dataset. Finally, I computed a 95% bootstrap confidence interval for the difference in mean response scores to "Q1_Happy" between shows.
 
-Results: The difference in responses to "Q1_Happy" between viewers of "Living with Ed" and viewers of "My Name is Earl" is between -0.391 and 0.101, with 95% confidence. 
+Results: The difference in responses to "Q1_Happy" between viewers of "Living with Ed" and viewers of "My Name is Earl" is between -0.391 and 0.101, with 95% confidence. Since 0 is contained within our confidence interval, there is no evidence that either "Living with Ed" or "My Name is Earl" consistently produced a higher mean "Q1_Happy" response among viewers.
 
 Conclusion: At a 5% significance level, there is no statistically significant difference between the response scores to "Q1_Happy" between viewers of "Living with Ed" and viewers of "My Name is Earl."
 
@@ -168,7 +168,7 @@ Question: Is there evidence that either "The Biggest Loser" or "The Apprentice: 
 
 Approach: First, I created a new dataset that only contains the shows, "The Biggest Loser" and "The Apprentice: Los Angeles." Then, I created 10000 bootstrap samples from the new dataset. Finally, I computed a 95% bootstrap confidence interval for the difference in mean response scores to "Q1_Annoyed" between shows.
 
-Results: The difference in responses to "Q1_Annoyed" between viewers of "The Biggest Loser" and viewers of "The Apprentice: Los Angeles" is between -0.521 and -0.019, with 95% confidence. 
+Results: The difference in responses to "Q1_Annoyed" between viewers of "The Biggest Loser" and viewers of "The Apprentice: Los Angeles" is between -0.521 and -0.019, with 95% confidence. Since 0 is not contained within our confidence interval, there is evidence that either "The Biggest Loser" or "The Apprentice: Los Angeles" consistently produced a higher mean "Q1_Annoyed" response among viewers.
 
 Conclusion: At a 5% significance level, there is a statistically significant difference between the response scores to "Q1_Annoyed" between viewers of "The Biggest Loser" and viewers of "The Apprentice: Los Angeles."
 
@@ -207,6 +207,6 @@ Question: Is there evidence that DMAs with paid search results have a higher rev
 
 Approach: First, I created a new variable within the original dataset, the revenue ratio, which is the ratio of revenue after the experiment started to the revenue before it started. Then, I created 10000 bootstrap samples from the new dataset. Finally, I computed a 95% bootstrap confidence interval for the difference in mean revenue ratios between DMAs with paid search results and those without them. 
 
-Results: The difference in the mean revenue ratio between DMAs with paid search results and those without them is between -0.09 dollars and -0.014 dollars, with 95% confidence. 
+Results: The difference in the mean revenue ratio between DMAs with paid search results and those without them is between -0.09 dollars and -0.014 dollars, with 95% confidence. Since 0 is not contained within our confidence interval, there is evidence that DMAs with paid search results have a higher revenue ratio compared to to DMAs without them.
 
-Conclusion: At a 5% significance level, there is a statistically significant difference between the revenue ratio of DMAs with paid search results and those without them. 
+Conclusion: At a 5% significance level, there is a statistically significant difference between the revenue ratio of DMAs with paid search results and those without them. This means that we are 95% confident that EBay's paid search advertising on Google was driving extra revenue.
